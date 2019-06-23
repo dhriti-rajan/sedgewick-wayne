@@ -1,0 +1,12 @@
+package com.github.dhriti.sedgewick_wayne.ch1.s2;
+
+public class P28_OrderCheck {
+    public static void main(String[] args) {
+        double x = Double.parseDouble(args[0]);
+        double y = Double.parseDouble(args[1]);
+        double z = Double.parseDouble(args[2]);
+        if(x > y && y > z) System.out.println(true);
+        else if (x < y && y < z) System.out.println(true);
+        else System.out.println(false);
+    }
+}

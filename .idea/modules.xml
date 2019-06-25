@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/sedgewick.iml" filepath="$PROJECT_DIR$/sedgewick.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sedgewick-wayne.iml" filepath="$PROJECT_DIR$/sedgewick-wayne.iml" />
     </modules>
   </component>
 </project>

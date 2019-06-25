@@ -4,10 +4,7 @@ package com.github.dhriti.sedgewick_wayne.ch1.s3;
 // Eratosthenes method for determining primes, but instead iterates through each
 // possible factor of each number to determine whether or not it is prime.
 
-// Faster than P36_BasicPrimeCounter because it only checked factors up to the
-// square root of n as opposed to up to n.
-
-public class P36_BetterPrimeCounter {
+public class P36_BasicPrimeCounter {
     public static void main(String[] args) {
         int n = Integer.parseInt(args[0]);
         System.out.println("The number of primes less than or equal to " + n
@@ -24,8 +21,7 @@ public class P36_BetterPrimeCounter {
     }
 
     private static boolean isPrime(int n) {
-        int bound = (int) Math.ceil(Math.sqrt(n));
-        for (int i = 2; i <= bound && i < n; ++i) {
+        for (int i = 2; i < n; ++i) {
             if (n % i == 0) return false;
         }
         return true;

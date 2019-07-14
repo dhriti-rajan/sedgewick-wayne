@@ -5,7 +5,7 @@ public class P39_CouponCollector {
         int n = Integer.parseInt(args[0]);
         double averageDrawings = 0;
 
-        for (int i = 0; i < 1000; ++i) {
+        for (int i = 0; i < 1000000; ++i) {
             int[] coupons = new int[n];
 
             while(notFinished(coupons)) {
@@ -15,7 +15,7 @@ public class P39_CouponCollector {
             }
         }
 
-        averageDrawings /= 1000;
+        averageDrawings /= 1000000;
 
         System.out.println(averageDrawings);
         System.out.println(nthHarmonicNumber(n) * n);
